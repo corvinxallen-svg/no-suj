@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const container = document.querySelector('.container');
     const togglePassword = document.getElementById('togglePassword'); // The new eye icon
 
-    const CORRECT_PASSWORD = "192000"; 
+    const CORRECT_PASSWORD = "1234567"; 
 
     // --- Show/Hide Password Logic ---
     togglePassword.addEventListener('click', function () {
