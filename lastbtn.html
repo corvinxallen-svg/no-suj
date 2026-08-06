@@ -1,0 +1,106 @@
+<!-- lastbtn.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Launch Sequence</title>
+    <link rel="stylesheet" href="lastbtn.css">
+    <script src="lastbtn.js" defer></script>
+</head>
+<body>
+
+    <!-- Full‑page starfield -->
+    <div id="space-bg">
+        <div id="fp-stars1" class="fp-star-layer"></div>
+        <div id="fp-stars2" class="fp-star-layer"></div>
+        <div id="fp-stars3" class="fp-star-layer"></div>
+        <div id="fp-stars4" class="fp-star-layer twinkle-layer"></div>
+        <div id="fp-stars5" class="fp-star-layer twinkle-layer-slow"></div>
+    </div>
+
+    <!-- Flashlight cursor -->
+    <div id="flashlight"></div>
+
+    <!-- The button -->
+    <button type="button" class="btn">
+        <strong>Press</strong>
+        <div id="container-stars">
+            <div id="stars1" class="star-layer"></div>
+            <div id="stars2" class="star-layer"></div>
+            <div id="stars3" class="star-layer"></div>
+        </div>
+        <div id="glow">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </button>
+
+    <!-- Zoom overlay -->
+    <div id="zoom-overlay"></div>
+
+    <!-- Confession content -->
+    <div id="confession-wrapper">
+        <div class="confession-text" data-index="0">u might have noticed something...</div>
+        <div class="confession-text" data-index="1">or maybe u haven't</div>
+        <div class="confession-text" data-index="2">but there's something i need to tell u</div>
+        <div class="confession-text" data-index="3">something i've held close for a while now</div>
+        <div class="confession-text" data-index="4">this might be a cringe one</div>
+        <div class="confession-text" data-index="5">but i can't keep pretending anymore</div>
+        <div class="confession-text" data-index="6">so i'm just going to say it...</div>
+        <div class="confession-text final-text" data-index="7">im completely, hopelessly in love with YOU</div>
+
+        <!-- Yes / No buttons area -->
+        <div class="choice-area">
+            <div class="choice-buttons" id="choice-container">
+                <div class="yes-btn-wrapper">
+                    <button class="choice-btn yes-btn">Yes</button>
+                </div>
+                <div class="no-btn-wrapper" id="no-btn-wrapper">
+                    <button class="choice-btn no-btn" id="no-dodge-btn">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Speech bubble (fixed position, follows button) -->
+    <div id="speech-bubble" class="speech-bubble">
+        <span class="speech-text"></span>
+    </div>
+
+    <!-- MODAL OVERLAY -->
+    <div id="card-modal" class="modal-overlay">
+        <div class="modal-close">✕</div>
+        <div class="modal-card-container">
+            <div id="card-yes" class="response-card">
+                <div class="card">
+                    <div class="card__image-container">
+                        <img src="chainsaw-man-denji.gif" alt="Chainsaw Man Denji Dance" class="card__gif">
+                    </div>
+                    <svg class="card__svg" viewBox="0 0 800 500">
+                        <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#333"></path>
+                        <path class="card__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="pink" stroke-width="3" fill="transparent"></path>
+                    </svg>
+                    <div class="card__content">
+                        <p class="card__title">Yayy!</p>
+                        <p>Tysmm for choosing me *min crush name htae d mr*</p>
+                        <p>btw, free to play valorant tonight?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="card-no" class="response-card">
+                <div class="card card-no">
+                    <div class="card__image-container"></div>
+                    <div class="card__content">
+                        <p class="card__title">nount ta kout pok byr</p>
+                        <p>Don't feel guilty doing this. Its completly fine for me, I expected this *min crush name htae d mr*</p>
+                        <p>u can close this page now..</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
