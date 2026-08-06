@@ -1,0 +1,46 @@
+/* Centers the loading animation and matches your dark theme */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: radial-gradient(circle, #000000, #250c12, #420d18, #610819, #7e0315);
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out; /* Smooth fade-out transition */
+}
+
+/* This class gets added by JS to trigger the fade effect */
+body.fade-out {
+  opacity: 0;
+}
+
+/* Your provided SVG styling */
+.loading svg polyline {
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.loading svg polyline#back {
+  fill: none;
+  stroke: gray;
+}
+
+.loading svg polyline#front {
+  fill: none;
+  stroke: red;
+  stroke-dasharray: 48, 144;
+  stroke-dashoffset: 192;
+  animation: dash_682 1.4s linear infinite;
+}
+
+@keyframes dash_682 {
+  72.5% {
+    opacity: 0;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}

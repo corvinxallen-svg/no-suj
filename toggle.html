@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>...P...</title>
+    <link rel="stylesheet" href="toggle.css">
+    <script src="toggle.js" defer></script>
+    <link rel="icon" href="icon.ico" type="image/svg+xml">
+    <link rel="icon" href="icon.ico" sizes="any">
+    <style>
+    body {
+      /* Added Flexbox centering */
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      /* Existing styling */
+      background-image: radial-gradient(circle, #000000, #250c12, #420d18, #610819, #7e0315);
+      opacity: 1;
+      transition: opacity 1s ease-in-out;
+    }
+    
+    body.fade-out {
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+    <div class="love">
+    <input id="switch" type="checkbox">
+    <label class="love-heart" for="switch">
+      <i class="left"></i>
+      <i class="right"></i>
+      <i class="bottom"></i>
+      <div class="round"></div>
+    </label>
+  </div>
+</body>
+</html>
